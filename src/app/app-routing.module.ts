@@ -4,13 +4,21 @@ import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InicioComponent } from './public/inicio/inicio.component';
+import { ContactoComponent } from './public/contacto/contacto.component';
+import { BlogComponent } from './public/blog/blog.component';
+import { CursosComponent } from './public/cursos/cursos.component';
+import { ServiciosComponent } from './public/servicios/servicios.component';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent },  // Usar el guardia aquí
+  { path: 'dashboard', component: DashboardComponent },  
   { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent },  // Ruta para el login
-  { path: '', component: InicioComponent },  // Ruta para el login
-  { path: '', redirectTo: '/', pathMatch: 'full' },  // Redirige al login por defecto
+  { path: 'login', component: LoginComponent }, 
+  { path: '', component: InicioComponent }, 
+  { path: 'servicios', component: ServiciosComponent }, 
+  { path: 'cursos', component: CursosComponent }, 
+  { path: 'blog', component: BlogComponent }, 
+  { path: 'contacto', component: ContactoComponent }, 
+  { path: '', redirectTo: '/', pathMatch: 'full' }, 
 ];
 
 @NgModule({
