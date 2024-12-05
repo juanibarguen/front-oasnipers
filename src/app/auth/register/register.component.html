@@ -1,0 +1,40 @@
+<div class="register-form">
+    <h2>Registro</h2>
+  
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div *ngIf="successMessage" class="alert alert-success">
+        {{ successMessage }}
+      </div>
+      <div *ngIf="errorMessage" class="alert alert-danger">
+        {{ errorMessage }}
+      </div>
+  
+      <div>
+        <label for="username">Nombre de usuario</label>
+        <input id="username" formControlName="username" type="text" />
+      </div>
+  
+      <div>
+        <label for="password">Contraseña</label>
+        <input id="password" formControlName="password" type="password" />
+      </div>
+  
+      <div>
+        <label for="mail">Correo electrónico</label>
+        <input id="mail" formControlName="mail" type="email" />
+      </div>
+  
+      <div>
+        <label for="firstName">Nombre</label>
+        <input id="firstName" formControlName="firstName" type="text" />
+      </div>
+  
+      <div>
+        <label for="lastName">Apellido</label>
+        <input id="lastName" formControlName="lastName" type="text" />
+      </div>
+  
+      <button type="submit" [disabled]="loading">Registrar</button>
+    </form>
+  </div>
+  
