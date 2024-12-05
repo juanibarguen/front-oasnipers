@@ -8,13 +8,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { InicioComponent } from './public/inicio/inicio.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { ServiciosComponent } from './public/servicios/servicios.component';
+import { CursosComponent } from './public/cursos/cursos.component';
+import { BlogComponent } from './public/blog/blog.component';
+import { ContactoComponent } from './public/contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    InicioComponent,
+    NavbarComponent,
+    FooterComponent,
+    ServiciosComponent,
+    CursosComponent,
+    BlogComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
